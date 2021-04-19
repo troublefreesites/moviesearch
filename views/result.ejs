@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css"   href="/css/style.css">
+</head>
+<body>
+  
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      <h1 class="display-4">OMDB Movie Search</h1>
+      </div>
+     
+    </div>
+  </div>
+  <div class="container container-main">
+    <div class="row">
+      <div class="col">
+        <ul>
+        <li><h3>Title</h3><%= movieData.Title %></li>
+        <li><h3>Year</h3><%= movieData.Year %></li>
+        <li><h3>Rating</h3><%= movieData.Rated %></li>
+        <li><h3>Release Date</h3><%= movieData.Released %></li>
+        <li><h3>Starring</h3><%= movieData.Actors %></li>
+        <li><h3>Director</h3><%= movieData.Director %></li>
+        <li><h3>Plot Summary</h3><%= movieData.Plot %></li>
+        <li><h3>Awards</h3><%= movieData.Awards %></li>
+        <li><h3>IMDB Rating</h3><%= movieData.imdbRating %></li>
+       </ul>
+      </div>
+      <div class="col text-right right-col">
+        <img src="<%= movieData.Poster %>">
+      </div>
+    </div>
+  </div>
+  
+</html>

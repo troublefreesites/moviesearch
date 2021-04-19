@@ -1,0 +1,35 @@
+body {
+    color: #202020;
+    background-color: #b08d57;
+}
+
+.jumbotron {
+    background-image: url("/pexels-skitterphoto-390089.jpg");
+}
+
+ul {
+    padding-top: 10%;
+}
+
+li {
+    list-style-type: none;
+    padding-bottom: 5%;
+}
+
+img {
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+.right-col {
+    background-color: rgba(185,185,185,0.1);
+}
+
+.container-main {
+    background-color: white;
+}
+
+.form-container {
+    height: 300px;
+    padding-top: 50px;
+}
