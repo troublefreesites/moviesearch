@@ -8,6 +8,7 @@ const { error } = require('console');
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static('public'));
 var request = require("request");
+const port = process.env.PORT || 3200;
 
 app.get('/', (req, res) => {
     res.render('index');
@@ -42,6 +43,6 @@ app.post('/result', (req, res) => {
   
 
 
-app.listen(3200, () => {
-  console.log('Example app listening on port 3200!')
+app.listen(port, () => {
+  console.log('Example app listening!')
 });
